@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brand Classification</title>
+  <style>
+    body{
+      background-color: beige;
+      text-align: center;
+      justify-content: center;
+    }
+    
+    .input {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 480px; 
+      padding-bottom: 5%;
+    }
+
+    button{
+      background-color: white;
+      padding: 1.8%;
+      border-radius: 8%;
+    }
+    button:hover{
+      background-color: beige;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Fruits & Vegetables Freshness Calculator</h1>
+  </header>
+    <div class="input">
+      <img 
+        src="{% url 'freshness_calculator_feed' %}" 
+        alt="Brand Classification Feed">
+    </div>
+    <footer>
+      <a href="{% url 'export_freshness_results' %}"><button type="button"><h3>Download Results</h3></button></a>
+    </footer>
+</body>
+</html>

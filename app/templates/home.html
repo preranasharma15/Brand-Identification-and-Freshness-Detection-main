@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brand-Freshness-App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1%;
+      }
+        body {
+        background-color: #f8f9fa;
+        align-items: center;
+    }
+
+    .team{
+      text-align: center;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .btn {
+      margin: 10px;
+    }
+    </style>
+</head>
+<body>
+  <header>
+    <h1>FLIPKART GRID 6.0 ROBOTICS CHALLENGE</h1>
+  </header>
+  <div class="team">
+    <h3>Team: CROSSGUILD</h3>
+    <h4>1. Aman Raj (Team Lead)</h4>
+    <h4>2. Prerana Sharma</h4>
+    <h4>3. Siddhartha Anand</h4>
+    <h4>4. Abhigyan Tejas Singh</h4>
+  </div>
+    <div class="container">
+        <a href="{% url 'brand_classification' %}" class="btn btn-primary btn-lg">Brand Classification</a>
+        <a href="{% url 'freshness_calculator' %}" class="btn btn-success btn-lg">Freshness Calculator</a>
+    </div>
+</body>
+</html>
